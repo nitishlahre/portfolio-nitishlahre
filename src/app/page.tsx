@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Home from "../components/home";
 import useLenis from "../hooks/useLenis";
 import Loader from "../components/Loader";
-import Router from "next/router"; // Note: Ensure this import is correct based on your Next.js version.
+import Router from "next/router"; 
 
 function Page() {
   useLenis();
@@ -11,7 +11,6 @@ function Page() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Explicitly type the event handlers
     const handleStart: () => void = () => setIsLoading(true);
     const handleStop: () => void = () => setIsLoading(false);
 
