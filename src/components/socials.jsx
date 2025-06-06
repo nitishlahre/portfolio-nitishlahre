@@ -55,7 +55,7 @@ export default function Socials() {
           </div>
         </div>
       </div>
-      <div className="name-logo fixed top-0 left-0 mx-[1rem] my-[3.5rem] text-wrapper  ">
+      <div className="name-logo fixed top-0 left-0 mx-[1rem] my-[3.5rem] text-wrapper   ">
         <button
           onClick={() => scrollToSection("header")}
           className="animated-text font-extrabold bg-purple-600 text-white px-2 rounded-sm"

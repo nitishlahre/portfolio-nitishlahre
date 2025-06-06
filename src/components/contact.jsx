@@ -16,38 +16,42 @@ export default function Contact() {
   )}`;
 
   return (
-    <div id="contact" className="h-fit w-full connect px-40 pt-56 pb-32">
-      <h1 className="uppercase text-2xl font-bold p-5 pl-0 text-purple-600">
+    <div id="contact" className="h-fit w-full px-4 md:px-16 lg:px-40 p-20  pb-16 md:pb-32">
+      <h1 className="uppercase text-2xl md:text-3xl font-bold p-4 pl-0 text-purple-600">
         Contact
       </h1>
-      <div className="flex w-full h-fit border rounded">
-        <div className="child flex-1 font-bold">
-          <div className="social-handle space-y-5 p-10">
-            <div className="hover-effect p-2 px-5 rounded border">
-              <Link href={whatsappURL}>
-                <h1>Phone</h1>
-                <h1>+91 798 789 8043</h1>
+      <div className="flex flex-col md:flex-row w-full border rounded overflow-hidden">
+        <div className="flex-1 font-bold">
+          <div className="space-y-4 md:space-y-6 p-6 md:p-10">
+            <div className="hover-effect p-3 md:p-5 rounded ">
+              <Link href={whatsappURL} target="_blank" rel="noopener noreferrer" className="block">
+                <h1 className="text-lg md:text-xl">Phone</h1>
+                <h1 className="text-base md:text-lg">+91 798 789 8043</h1>
               </Link>
             </div>
-            <div className="hover-effect p-2 px-5 rounded">
-              <Link href="mailto:nitishlahre31@gmail.com">
-                <h1>Email</h1>
-                <h1>nitishlahre31@gmail.com</h1>
+            <div className="hover-effect p-3 md:p-5 rounded">
+              <Link href="mailto:nitishlahre31@gmail.com" className="block">
+                <h1 className="text-lg md:text-xl">Email</h1>
+                <h1 className="text-base md:text-lg">nitishlahre31@gmail.com</h1>
               </Link>
             </div>
-            <div className="hover-effect p-2 px-5 rounded border">
-              <Link href="https://github.com/nitishlahre">
-                <h1>GitHub</h1>
+            <div className="hover-effect p-3 md:p-5 rounded ">
+              <Link href="https://github.com/nitishlahre" target="_blank" rel="noopener noreferrer" className="block">
+                <h1 className="text-lg md:text-xl">GitHub</h1>
               </Link>
             </div>
-            <div className="hover-effect p-2 px-5 rounded">
-              <Link href="https://www.linkedin.com/in/nitish-lahre/">
-                <h1>LinkedIn</h1>
+            <div className="hover-effect p-3 md:p-5 rounded">
+              <Link href="https://www.linkedin.com/in/nitish-lahre/" target="_blank" rel="noopener noreferrer" className="block">
+                <h1 className="text-lg md:text-xl">LinkedIn</h1>
               </Link>
             </div>
-            <div className="hover-effect p-2 px-5 rounded border">
-              <button onClick={downloadCV}>
-                <h1>My CV</h1>
+            <div className="hover-effect p-3 md:p-5 rounded ">
+              <button
+                onClick={downloadCV}
+                className="w-full text-left"
+                aria-label="Download CV"
+              >
+                <h1 className="text-lg md:text-xl cursor-pointer">My CV</h1>
               </button>
             </div>
           </div>
