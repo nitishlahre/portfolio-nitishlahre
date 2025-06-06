@@ -8,7 +8,7 @@ function Header() {
     >
       <div className="pt-16 md:pt-28 text-center main-text">
         <div className="text-wrapper">
-          <h1 className="animated-text font-bold text-purple-600 text-xl md:text-3xl">
+          <h1 className="animated-text font-bold text-purple-600 md:text-xl">
             WEB DEVELOPER
           </h1>
         </div>

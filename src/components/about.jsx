@@ -3,17 +3,17 @@ import React from "react";
 function About() {
   return (
     <>
-      <section id="about" className="h-fit px-4 md:px-16 lg:px-40">
-        <h1 className="uppercase text-xl md:text-2xl font-bold pt-8 md:pt-16 p-4 pl-0 text-purple-600">
+      <section id="about" className="h-fit px-4 md:px-16 lg:px-28">
+        <h1 className="uppercase text-xl md:text-xl font-bold pt-8 md:pt-16 p-4 pl-0 text-purple-600">
           about
         </h1>
         <div className="flex flex-col lg:flex-row p-4 md:p-8 gap-6 lg:gap-20 about-parent">
           <div className="flex justify-center">
-            <div className="card w-32 sm:w-48 md:w-64 lg:w-72">
+            <div className="card">
               <img
                 src="/images/nitish-lahre.jpg"
                 alt=""
-                className="w-full h-auto rounded-lg sm:rounded-lg object-cover"
+                className="h-full w-32 md:w-full lg:w-full rounded-lg sm:w-full"
               />
             </div>
           </div>
@@ -28,7 +28,7 @@ function About() {
           </div>
         </div>
         <div className="skills">
-          <h1 className="uppercase text-xl md:text-2xl font-bold pt-8 md:pt-10 p-4 pl-0 text-purple-600">
+          <h1 className="uppercase text-xl md:text-xl font-bold pt-8 md:pt-10 p-4 pl-0 text-purple-600">
             skills & technologies
           </h1>
           <div className="p-4 uppercase overflow-hidden flex flex-wrap font-extrabold text-sm md:text-lg lg:text-2xl justify-center md:justify-evenly gap-3">
