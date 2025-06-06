@@ -3,16 +3,17 @@ import React, { useEffect, useState } from "react";
 import Home from "../components/home";
 import useLenis from "../hooks/useLenis";
 import Loader from "../components/Loader";
-import { Router } from "next/router";
+import Router from "next/router"; // Note: Ensure this import is correct based on your Next.js version.
 
-function page() {
+function Page() {
   useLenis();
 
   const [isLoading, setIsLoading] = useState(true);
 
-useEffect(() => {
-    const handleStart = () => setIsLoading(true);
-    const handleStop = () => setIsLoading(false);
+  useEffect(() => {
+    // Explicitly type the event handlers
+    const handleStart: () => void = () => setIsLoading(true);
+    const handleStop: () => void = () => setIsLoading(false);
 
     Router.events.on("routeChangeStart", handleStart);
     Router.events.on("routeChangeComplete", handleStop);
@@ -25,7 +26,6 @@ useEffect(() => {
     };
   }, []);
 
-
   return (
     <div className="overflow-auto">
       {isLoading && <Loader />}
@@ -34,4 +34,4 @@ useEffect(() => {
   );
 }
 
-export default page;
+export default Page;
