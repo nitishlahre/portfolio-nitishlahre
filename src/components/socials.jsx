@@ -14,8 +14,8 @@ export default function Socials() {
       const startPosition = window.scrollY;
 
       animate(startPosition, targetPosition, {
-        duration: 0.8, // Animation duration in seconds
-        ease: "easeInOut", // Easing function
+        duration: 0.8,
+        ease: "easeInOut",
         onUpdate: (value) => {
           window.scrollTo(0, value);
         },
@@ -23,8 +23,8 @@ export default function Socials() {
     }
   };
 
-  const phoneNumber = "7987898043"; // Replace with target number (country code + number)
-  const message = "Hello! Hope you doing well..."; // Your default message
+  const phoneNumber = "7987898043";
+  const message = "Hello! Hope you doing well...";
 
   const urlEncodedMessage = encodeURIComponent(message);
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${urlEncodedMessage}`;

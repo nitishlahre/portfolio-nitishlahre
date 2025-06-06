@@ -7,8 +7,7 @@ import MenuBar from "../components/menuBar";
 import Socials from "../components/socials";
 
 const Home = () => {
-    useEffect(() => {
-    // Scroll to the top when the page loads
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
